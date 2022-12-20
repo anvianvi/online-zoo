@@ -1,0 +1,239 @@
+.header {
+  background: var(--black_blue);
+  color: var(--white);
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+.header.burger {
+  background: var(--white);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0 3px;
+}
+@media (width >630px) {
+  .header-container {
+    padding: 0 10px 3px;
+  }
+}
+@media (width >990px) {
+  .header-container {
+    padding: 13px 0;
+  }
+}
+.logo-container {
+  margin: 2px 0 0 -1px;
+  position: relative;
+  width: 49px;
+  height: 29px;
+  border: 0.8px solid var(--black_blue);
+  transition: 0.5s ease-in;
+}
+.logo-container.burger {
+  border: 0.8px solid var(--orange);
+  border-radius: 2px;
+  color: var(--orange);
+}
+@media (width >990px) {
+  .logo-container {
+    border: 1px solid var(--white);
+    width: 82px;
+    height: 52px;
+    padding: 3px 1px 0px 0;
+  }
+}
+.h1 {
+  font-size: 12.3px;
+  line-height: 120%;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+@media (width >990px) {
+  .h1 {
+    font-size: 19px;
+  }
+}
+.bambook-branch {
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  height: 13px;
+  transition: 0.5s ease-in;
+}
+.bambook-branch.burger {
+  filter: invert(59%) sepia(24%) saturate(1888%) hue-rotate(329deg)
+    brightness(105%) contrast(95%);
+}
+@media (width > 1500px) {
+  .bambook-branch {
+    top: 16px;
+    left: 6px;
+    height: 27px;
+  }
+}
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 29px;
+  height: 29px;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 0 auto;
+}
+@media (width >990px) {
+  .burger-menu {
+    display: none;
+  }
+}
+.burger-menu span,
+.burger-menu span:before,
+.burger-menu span:after {
+  display: block;
+  background: var(--white);
+  border-radius: 2px;
+  height: 2px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  width: 18px;
+}
+.burger-menu span:before,
+.burger-menu span:after {
+  content: "";
+}
+.burger-menu span {
+  right: 0px;
+  top: 15px;
+}
+.burger-menu span:before {
+  left: 0px;
+  top: -4px;
+}
+.burger-menu span:after {
+  left: 0px;
+  top: 4px;
+}
+
+.burger-menu.burger span {
+  transform: rotate(-45deg);
+  top: 17px;
+  width: 18px;
+  background: var(--black_blue);
+}
+.burger-menu.burger span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 18px;
+  background: var(--black_blue);
+}
+.burger-menu.burger span:after {
+  top: 0px;
+  left: 0;
+  transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+  background: var(--black_blue);
+}
+.menu {
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: -110vw;
+  width: 100vw;
+  height: 100vh;
+  transition: 0.5s ease-in;
+}
+.menu.burger {
+  display: block;
+  position: absolute;
+  background: var(--white);
+  top: 33px;
+  left: 0px;
+  padding: 10px 0 0 10px;
+}
+.menu.burger li {
+  margin: 15px 0px;
+}
+@media (width >630px) {
+  .menu {
+    top: 31px;
+  }
+  .menu.burger {
+    top: 31px;
+  }
+}
+@media (width >990px) {
+  .menu {
+    position: initial;
+    width: 100%;
+    height: 100%;
+  }
+}
+.header-nav {
+  max-width: 160px;
+}
+@media (width >990px) {
+  .header-nav {
+    display: flex;
+    gap: 49px;
+    padding: 0 0 0 63px;
+    color: var(--white);
+    max-width: 1600px;
+  }
+}
+@media (width >1500px) {
+  .header-nav {
+    gap: 58px;
+  }
+}
+.nav-el {
+  color: var(--black_blue);
+  font-size: 16px;
+  line-height: 140%;
+}
+@media (width >990px) {
+  .nav-el {
+    color: var(--white);
+  }
+}
+.header-nav a:hover {
+  color: var(--green);
+}
+.nav-active {
+  color: var(--orange);
+}
+@media (width >990px) {
+  .design-by {
+    display: none;
+  }
+}
+.move-to-right {
+  display: none;
+}
+@media (width >990px) {
+  .move-to-right {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 131px;
+  }
+}
+@media (width >1500px) {
+  .move-to-right {
+    margin: 0 -5px 0 auto;
+  }
+}
+
+@media (width < 990px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}

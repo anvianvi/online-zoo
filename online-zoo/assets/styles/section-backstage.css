@@ -1,0 +1,130 @@
+.block-backstage {
+  position: relative;
+  margin: 0 auto 40px auto;
+}
+.backstage-img {
+  display: none;
+}
+.backstage-tekst {
+  padding: 0 0 0;
+}
+.backstage-tekst h3 {
+  margin: 0 0 10px;
+}
+.first-paragraph {
+  line-height: 131%;
+  margin: 0 0 21px 2px;
+}
+.backstage-tekst h2 {
+  margin: 0 0 9px 2px;
+  line-height: 120%;
+  font-weight: 400;
+}
+.second-paragraph {
+  line-height: 137%;
+  margin: 0 0 21px 0;
+}
+.backstage-decorate-flowers {
+  position: absolute;
+  width: 34px;
+  height: 222px;
+  right: -10px;
+  top: -66px;
+  background: url(../../assets/images/backstage-flower.avif) no-repeat center
+    center;
+  background-size: contain;
+}
+@media (width >630px) {
+  .block-backstage {
+    margin: 0 auto 80px auto;
+  }
+  .backstage-tekst h3 {
+    margin: 0 0 22px 14px;
+  }
+  .first-paragraph {
+    margin: 0 0 30px 10px;
+    width: 450px;
+  }
+  .backstage-tekst h2 {
+    margin: 0 0 19px 14px;
+  }
+  .second-paragraph {
+    margin: 0 0 0 10px;
+    width: 485px;
+  }
+  .backstage-decorate-flowers {
+    background: url(../../assets/images/backstage-flower-640.avif) no-repeat
+      center center;
+    width: 130px;
+    height: 476px;
+    right: -9px;
+    top: -61px;
+  }
+}
+@media (width >990px) {
+  .backstage-img {
+    display: block;
+    background: url(../../assets/images/bakstage-img-1000.avif) no-repeat center
+      center;
+    background-size: cover;
+    height: 408px;
+    width: 455px;
+  }
+  .block-backstage {
+    display: grid;
+    grid-template-columns: 0.525fr 0.475fr;
+    padding: 109px 0 62px;
+  }
+  .backstage-tekst {
+    padding: 0 0 0 31px;
+    margin: -9px 0 0;
+  }
+  .backstage-tekst h3 {
+    margin: 0 0 22px;
+  }
+  .first-paragraph {
+    margin: 0 0 30px 0px;
+  }
+  .backstage-tekst h2 {
+    margin: 54px 0 34px;
+  }
+  .second-paragraph {
+    margin: 0;
+    width: 453px;
+  }
+  .backstage-decorate-flowers {
+    width: 202px;
+    height: 605px;
+    right: -218px;
+    top: 11px;
+  }
+}
+@media (width >1500px) {
+  .backstage-img {
+    background: url(../../assets/images/bakstage-img-1600.avif) no-repeat center
+      center;
+    width: 609px;
+    height: 403px;
+    margin: -1px 0 0px -1px;
+  }
+  .block-backstage {
+    padding: 140px 0 98px 0;
+  }
+  .backstage-tekst {
+    padding: 0 0 0 87px;
+  }
+  .backstage-tekst h3 {
+    padding: 10px 0 0;
+  }
+  .second-paragraph {
+    width: 455px;
+  }
+  .backstage-decorate-flowers {
+    background: url(../../assets/images/backstage-flower-1600.avif) no-repeat
+      center center;
+    width: 200px;
+    height: 613px;
+    right: -218px;
+    top: 11px;
+  }
+}

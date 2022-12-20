@@ -1,0 +1,51 @@
+let animals = [
+  {
+    id: 0,
+    img: "../../assets/images/pets-slider/pandas.avif",
+    name: "Giant Pandas",
+    description: "Native to Southwest China",
+    food: "../../assets/icons/banana.svg",
+  },
+  {
+    id: 1,
+    img: "../../assets/images/pets-slider/eglas.avif",
+    name: "Eagles",
+    description: "Native to South America",
+    food: "../../assets/icons/meet-fish_icon.svg",
+  },
+  {
+    id: 3,
+    img: "../../assets/images/pets-slider/aligator.avif",
+    name: "Alligators",
+    description: "Native to Southeastern U.S.",
+    food: "../../assets/icons/meet-fish_icon.svg",
+  },
+  {
+    id: 4,
+    img: "../../assets/images/pets-slider/gorila.avif",
+    name: "Gorillas",
+    description: "Native to Congo",
+    food: "../../assets/icons/banana.svg",
+  },
+  {
+    id: 5,
+    img: "../../assets/images/pets-slider/sloth.avif",
+    name: "Two-toed Sloth",
+    description: "Mesoamerica, South America",
+    food: "../../assets/icons/banana.svg",
+  },
+  {
+    id: 6,
+    img: "../../assets/images/pets-slider/cheetahs.avif",
+    name: "Cheetahs",
+    description: "Native to Africa",
+    food: "../../assets/icons/meet-fish_icon.svg",
+  },
+  {
+    id: 7,
+    img: "../../assets/images/pets-slider/penguins.avif",
+    name: "Penguins",
+    description: "Native to Antarctica",
+    food: "../../assets/icons/meet-fish_icon.svg",
+  },
+]

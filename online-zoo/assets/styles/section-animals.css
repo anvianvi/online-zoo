@@ -1,0 +1,350 @@
+.animals-block {
+  position: relative;
+  margin: 0px auto 60px auto;
+}
+
+@media (width >630px) {
+  .animals-block {
+    margin: 0px auto 101px auto;
+  }
+}
+@media (width >990px) {
+  .animals-block {
+    margin: 0px auto 140px auto;
+  }
+}
+@media (width >1500px) {
+  .animals-block {
+    margin: 0 auto 100px auto;
+  }
+}
+
+.slider-button {
+  display: none;
+}
+@media (width >630px) {
+  .slider-button {
+    display: block;
+    position: absolute;
+    background: #fe9013;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0 0 0;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+  }
+}
+.slider-button:active {
+  background: var(--green);
+}
+.slider-button:hover {
+  background: #e47209;
+}
+.slider-left {
+  top: 40%;
+  left: -7%;
+}
+.slider-right {
+  top: 40%;
+  right: -7%;
+}
+@media (width >630px) {
+  .slider-left {
+    top: 39.4%;
+    left: 37.5%;
+  }
+  .slider-right {
+    top: 39.4%;
+    left: 52.4%;
+  }
+}
+@media (width >990px) {
+  .slider-left {
+    top: 39.4%;
+    left: 34.4%;
+  }
+  .slider-right {
+    top: 39.4%;
+    left: 59.1%;
+  }
+}
+@media (width >1500px) {
+  .slider-left {
+    top: 40%;
+    left: -7%;
+  }
+  .slider-right {
+    top: 40%;
+    left: 101.5%;
+  }
+}
+.animals-cards-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 5;
+}
+@media (width >630px) {
+  .animals-cards-container {
+    gap: 92px 23px;
+  }
+}
+@media (width >990px) {
+  .animals-cards-container {
+    gap: 92px 22px;
+  }
+}
+@media (width >1500px) {
+  .animals-cards-container {
+    gap: 24px 29px;
+  }
+}
+.animals-slider-wrapper {
+  margin: 0 0 19px;
+}
+@media (width >630px) {
+  .animals-slider-wrapper {
+    margin: 0 0 60px;
+    padding: 0 0 0 3px;
+  }
+}
+@media (width >990px) {
+  .animals-slider-wrapper {
+    margin: 0 0 81px -7px;
+    padding: 0;
+  }
+}
+@media (width >1500px) {
+  .animals-slider-wrapper {
+    margin: 0 0 81px 0px;
+  }
+}
+.animal-card {
+  width: 285px;
+  max-height: 426px;
+  border-radius: 5px;
+  border: 1px solid var(--orange);
+  transition: background-color 1s ease-in-out;
+  margin: 0px 0 0 7px;
+  position: relative;
+}
+@media (width >990px) {
+  .animal-card {
+    width: 294px;
+  }
+}
+@media (width >1500px) {
+  .animal-card {
+    width: 366px;
+    margin: 0;
+  }
+}
+.showup {
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.animal-card:hover .showup {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 47px);
+  background: rgba(118, 116, 116, 0.7);
+}
+@media (width >990px) {
+  .animal-card:hover .showup {
+    height: calc(100% - 60px);
+  }
+}
+@media (width >1500px) {
+  .animal-card:hover .showup {
+    height: calc(100% - 59px);
+  }
+}
+.animal-card:hover {
+  background: rgba(118, 116, 116, 0.3);
+}
+.animal-card-img {
+  width: 100%;
+}
+.animal-card-agenda {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 8px 9px 11px;
+}
+@media (width >990px) {
+  .animal-card-agenda {
+    padding: 4px 9px 11px 14px;
+  }
+}
+@media (width >1500px) {
+  .animal-card-agenda {
+    padding: 4px 11px 11px 15px;
+  }
+}
+.title {
+  font-weight: 500;
+  font-size: 12.6px;
+  text-transform: uppercase;
+}
+.subtitle {
+  font-weight: 300;
+  font-size: 11.6901px;
+}
+@media (width >990px) {
+  .title {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .subtitle {
+    font-size: 15px;
+    line-height: 120%;
+  }
+}
+@media (width >1500px) {
+  .title {
+    font-size: 16px;
+    margin: 0 0 -4px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+}
+.animal-card-food-logo {
+  height: 29px;
+}
+@media (width >990px) {
+  .animal-card-food-logo {
+    height: 40px;
+  }
+}
+@media (width >990px) {
+  .animal-card-food-logo {
+    height: 37px;
+  }
+}
+.animal-card-food-logo img {
+  width: 100%;
+  height: 100%;
+}
+.choose-animal-button {
+  display: block;
+  width: 298px;
+  height: 54px;
+  background: #fe9013;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 16px 0 0 2px;
+  position: relative;
+  z-index: 3;
+}
+.choose-animal-button:hover {
+  background: #e47209;
+}
+.choose-animal-button:active {
+  background: var(--green);
+}
+.animals-block-decoration-left {
+  background: url(../../assets/images/animals-flower-left-320.png) no-repeat
+    center center;
+  background-size: contain;
+  width: 138px;
+  height: 72px;
+  position: absolute;
+  bottom: -60px;
+  left: -50px;
+  z-index: 1;
+}
+.animals-block-decoration-right {
+  background: url(../../assets/images/animals-flower-right.avif) no-repeat
+    center center;
+  background-size: contain;
+  width: 102px;
+  height: 75px;
+  position: absolute;
+  bottom: -65px;
+  right: -35px;
+  z-index: 1;
+}
+@media (width >630px) {
+  .animals-block-decoration-left {
+    background: url(../../assets/images/animals-flower-left-640.png) no-repeat
+      center center;
+    width: 160px;
+    height: 202px;
+    bottom: -101px;
+    left: -23px;
+  }
+  .animals-block-decoration-right {
+    background: url(../../assets/images/animals-flower-right-620.avif) no-repeat
+      center center;
+    width: 175px;
+    height: 131px;
+    bottom: -101px;
+    right: -9px;
+  }
+}
+@media (width >990px) {
+  .animals-block-decoration-left {
+    background: url(../../assets/images/animals-flower-left-1000.png) no-repeat
+      center center;
+    width: 191px;
+    height: 201px;
+    bottom: -140px;
+    left: -29px;
+  }
+  .animals-block-decoration-right {
+    background: url(../../assets/images/animals-flower-right-1000.avif)
+      no-repeat center center;
+    width: 241px;
+    height: 241px;
+    bottom: -170px;
+    right: -30px;
+  }
+}
+@media (width >1500px) {
+  .animals-block-decoration-left {
+    background: url(../../assets/images/animals-flower-left-1600.png) no-repeat
+      center center;
+    width: 288px;
+    height: 461px;
+    bottom: -100px;
+    left: -218px;
+  }
+  .animals-block-decoration-right {
+    background: url(../../assets/images/animals-flower-right-1600.avif)
+      no-repeat center center;
+    width: 368px;
+    height: 275px;
+    bottom: -100px;
+    right: -220px;
+  }
+}
+@keyframes append-animate {
+  from {
+    opacity: 0;
+    translatex: (-100%);
+  }
+  to {
+    opacity: 1;
+    translatex: (0%);
+  }
+}
+.new-box {
+  /* animation: append-animate 0.5s ease-in-out; */
+  animation: append-animate 1s linear;
+}
